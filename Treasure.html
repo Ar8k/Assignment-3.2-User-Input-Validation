@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linking to my css and my js-->
+    <link href="Treasure.css" rel="stylesheet">
+    <script src="Treasure.js"></script>
+    <!--title on the tab-->
+    <title>Get The Treasure</title>
+    <!--Main header -->
+    <h1><center>Get The Safe</center></h1>
+</head>
+<br><br><br><br><br><br><br>
+<body>
+    <BR><BR><BR><BR><BR><form id="login" onsubmit="return false"> <!--New form with the very needed onsubmit code-->
+        First Name: <input type="text" id="fn"><!--input place for the user to input his name, with an id so i can connect it in js-->
+        <br>
+        Last Name: <input type="text" id="ln"><!--same thing but with last name-->
+        <br>
+        Social Security: <input type="number" id="ssn"><!--same thing but with ssn, ut now its only a number not a text-->
+        <br>
+        Phone number: <input type="number" id="phn"><!--same thing but with phone number-->
+        <br>
+        Zip code: <input type="number" id="zc"><!--same thing but with zip code-->
+        <br>
+        <input id="button1" type="submit" onclick="Check();"><!--when the button is clicked, start the Check function-->
+        <p id="Status">Status of Your Login</p><!--paragraph with an id so i can update it in the js-->
+
+    </form>
+    
+</body>
+</html>
